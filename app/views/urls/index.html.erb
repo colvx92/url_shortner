@@ -1,0 +1,7 @@
+<%= render 'form' %>
+<hr>
+
+<% @urls.each do |url| %>
+  <%= link_to url_path(url), url_path(url) %>
+  <hr>
+<% end %>
