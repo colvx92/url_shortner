@@ -17,7 +17,7 @@ class UrlsController < ApplicationController
 
   def show
     @url = Url.find_by_short_url([params[:id]])
-    redirect_to "https://" + @url.long_url
+    redirect_to "http://" + @url.long_url
   end
 
   private
